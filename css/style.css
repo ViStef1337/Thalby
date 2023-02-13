@@ -1,0 +1,159 @@
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+img{
+    display: block;
+}
+/* header styles start */
+header{
+    margin-bottom: 14px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1064px;
+    margin: auto;
+}
+.list{
+    display: flex;
+}
+.list{
+    align-items: center;
+    padding-top: 5px;
+}
+.list__item{
+    margin-right: 28px;
+}
+.list__item:last-child{
+    margin-right: 0;
+}
+.item__link{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+.logo{
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 16px;
+}
+/* header styles end */
+
+/* Main banner styles start */
+.banner{
+    position: relative;
+    background: #F0EFEB;
+    margin-bottom: 60px;
+}
+h1{
+    color: black;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 42px;
+}
+.main__subtitle{
+    color: black;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 26px;
+}
+.main__pic{
+    width: 100%;
+    display: block;
+}
+.main__banner{
+    padding: 90px 0;
+}
+.container-img{
+    position: absolute;
+    right: 360px;
+    top: 0;
+}
+.main__link{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 7px 23px;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+/* Main banner styles end */
+
+/* Guides and sellers styles start */
+.guides__sellers{
+    margin-bottom: 248px;
+}
+.guides__title{
+    text-align: center;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+.guides__subtitle{
+    margin: auto;
+    max-width: 632px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 47px;
+}
+.guides__subtitle-second{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 88px;
+}
+.sellers__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 52px;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card__pic{
+    margin-bottom: 27px;
+}
+.card__title{
+    text-align: center;
+    margin: auto;
+    max-width: 156px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 17px;
+}
+.card__subtitle{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.card__link{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: black;
+}
+/* Guides and sellers styles end */
