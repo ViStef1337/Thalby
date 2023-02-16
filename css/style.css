@@ -66,17 +66,18 @@ h1{
 }
 .main__pic{
     width: 100%;
-    display: block;
 }
 .main__banner{
     padding: 90px 0;
+    display: flex;
 }
 .container-img{
-    position: absolute;
-    right: 360px;
-    top: 0;
+    position: relative;
+    right: -129px;
+    max-width: 599px;
 }
 .main__link{
+    display: inline-block;
     text-decoration: none;
     background: black;
     color: white;
@@ -124,12 +125,16 @@ h1{
     margin-bottom: 52px;
 }
 .cards{
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+.card{
+    max-width: 309px;
 }
 .card__pic{
     margin-bottom: 27px;
+    width: 100%;
 }
 .card__title{
     text-align: center;
@@ -155,5 +160,50 @@ h1{
     font-size: 17px;
     line-height: 20px;
     color: black;
+}
+.owl-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 309px;
+}
+.owl-carousel{
+    max-width: 1071px;
+    margin: auto;
+}
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+.owl{
+    max-width: 1071px;
+}
+.owl-dots{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.owl-dot{
+    width: 15px;
+    height: 15px;
+    background: gray;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
+.active{
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
+.owl-nav{
+    display: none;
 }
 /* Guides and sellers styles end */
