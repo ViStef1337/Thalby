@@ -7,7 +7,21 @@ img{
 }
 /* header styles start */
 header{
-    margin-bottom: 14px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 14px;
+    transition: .2s linear;
+    z-index: 999;
+}
+
+.header_active{
+    background: pink;
+}
+.header__burger{
+    display: none;
 }
 nav{
     display: flex;
@@ -19,8 +33,11 @@ nav{
 }
 .list{
     display: flex;
+    align-items: center;
+    padding-top: 5px;
 }
-.list{
+.list-ico{
+    display: flex;
     align-items: center;
     padding-top: 5px;
 }
@@ -181,6 +198,7 @@ h1{
     justify-content: center;
 }
 .owl-dots .owl-dot span{
+    display: inline-block;
     width: 15px;
     height: 15px;
     background: gray;
@@ -198,3 +216,58 @@ h1{
     margin-right: 10px;
 }
 /* Guides and sellers styles end */
+@media screen and (max-width: 767px){
+    header{
+        padding-bottom: 50px;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+
+    .logo{
+        position: relative;
+    }
+    .list{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        z-index: 10;
+        padding: 75px;
+    }
+    .list__item{
+        width: 100%;
+        margin-right: 0;
+    }
+}
