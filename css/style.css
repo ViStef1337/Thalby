@@ -7,7 +7,6 @@ img{
 }
 /* header styles start */
 header{
-
     position: fixed;
     top: 0;
     left: 0;
@@ -30,6 +29,7 @@ nav{
 .container{
     max-width: 1064px;
     margin: auto;
+    align-items: center;
 }
 .list{
     display: flex;
@@ -40,6 +40,7 @@ nav{
     display: flex;
     align-items: center;
     padding-top: 5px;
+    justify-content: center;
 }
 .list__item{
     margin-right: 28px;
@@ -215,59 +216,8 @@ h1{
     border: none;
     margin-right: 10px;
 }
-/* Guides and sellers styles end */
 @media screen and (max-width: 767px){
-    header{
-        padding-bottom: 50px;
-    }
-    .header__burger{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-    }
-    .header__burger span{
-        position: absolute;
-        background-color: black;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        top: 9px;
-    }
-    .header__burger:before,
-    .header__burger:after{
-        content: '';
-        background-color: black;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-    }
-    .header__burger:before{
-        top: 0;
-    }
-    .header__burger:after{
-        bottom: 0;
-    }
-
-    .logo{
-        position: relative;
-    }
-    .list{
-        display: block;
-    }
     nav{
-        position: fixed;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: green;
-        z-index: 10;
-        padding: 75px;
-    }
-    .list__item{
-        width: 100%;
-        margin-right: 0;
+        display: none;
     }
 }
