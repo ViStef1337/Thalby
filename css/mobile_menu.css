@@ -484,10 +484,4 @@ body.light .switch-wrap p span:nth-child(1):before {
         display: inline-block;
         margin-right: 30px;
     }
-    nav{
-        display: none;
-    }
-    .list{
-        display: none;
-    }
 }

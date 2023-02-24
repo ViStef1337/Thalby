@@ -1,0 +1,57 @@
+$main_font: 'Roboto';
+body{
+  font-family: $main_font;
+  font-style: normal;
+}
+img{
+  display: block;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 14px;
+  transition: .2s linear;
+  z-index: 999;
+  .container{
+    max-width: 1064px;
+    margin: auto;
+    align-items: center;
+    a{
+      img{
+        position: absolute;
+        left: calc(50% - 40px);
+        top: 16px;
+      }
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      .list{
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        li{
+          margin-right: 28px;
+          &last-child{
+            margin-right: 0;
+          }
+          a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+      .list-ico{
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        justify-content: center;
+      }
+    }
+  }
+}
