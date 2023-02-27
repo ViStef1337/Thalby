@@ -1,0 +1,126 @@
+main{
+  .banner{
+    position: relative;
+    background: #F0EFEB;
+    margin-bottom: 60px;
+    .container{
+      max-width: 1064px;
+      margin: auto;
+      align-items: center;
+      .main__banner{
+        padding: 90px 0;
+        display: flex;
+        h1{
+          color: black;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 70px;
+          margin-bottom: 42px;
+        }
+        .main__subtitle{
+          color: black;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+          margin-bottom: 26px;
+        }
+        .main__link{
+          display: inline-block;
+          text-decoration: none;
+          background: black;
+          color: white;
+          padding: 7px 23px;
+          border: 1px solid black;
+          border-radius: 100px;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+      .container-img{
+        position: relative;
+        right: -100px;
+        max-width: 599px;
+        .main__pic{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.guides__sellers{
+  margin-bottom: 248px;
+  .container{
+    max-width: 1064px;
+    margin: auto;
+    align-items: center;
+    .guides__title{
+      text-align: center;
+      margin-bottom: 27px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    .guides__subtitle{
+      margin: auto;
+      max-width: 632px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      margin-bottom: 47px;
+    }
+    .guides__subtitle-second{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      margin-bottom: 88px;
+    }
+    .sellers__title{
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 52px;
+    }
+    .cards{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      max-width: 1071px;
+      .card{
+        max-width: 309px;
+      }
+      .card__pic{
+        margin-bottom: 27px;
+        width: 100%;
+      }
+      .card__title{
+        text-align: center;
+        margin: auto;
+        max-width: 156px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 17px;
+      }
+      .card__subtitle{
+        text-align: center;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .card__link{
+        display: block;
+        text-align: center;
+        margin: auto;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        color: black;
+      }
+    }
+  }
+}

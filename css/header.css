@@ -12,6 +12,7 @@ header {
   width: 100%;
   padding-bottom: 14px;
   transition: 0.2s linear;
+  background: white;
   z-index: 999; }
   header .container {
     max-width: 1064px;
