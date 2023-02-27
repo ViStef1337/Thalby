@@ -258,26 +258,29 @@ header {
         display: flex;
         align-items: center;
         padding-top: 5px; }
-        header .container nav .list li {
-          margin-right: 28px; }
-          header .container nav .list lilast-child {
-            margin-right: 0; }
-          header .container nav .list li a {
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 26px; }
-      header .container nav .list-ico {
-        display: flex;
-        align-items: center;
-        padding-top: 5px;
-        justify-content: center; }
-        header .container nav .list-ico .list__item {
-          margin-right: 26px; }
-        header .container nav .list-icolast-child {
+      header .container nav li {
+        margin-right: 28px; }
+        header .container nav lilast-child {
           margin-right: 0; }
+        header .container nav li a {
+          text-decoration: none;
+          color: black;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px; }
+    header .container .list-ico {
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      justify-content: center; }
+      header .container .list-ico .list__item {
+        margin-right: 26px; }
+      header .container .list-icolast-child {
+        margin-right: 0; }
 
+@media screen and (max-width: 767px) {
+  nav {
+    display: none; } }
 main .banner {
   position: relative;
   background: #F0EFEB;
