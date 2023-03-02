@@ -5,20 +5,25 @@ body {
 img {
   display: block; }
 
+.header_active {
+  background: pink; }
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding-bottom: 14px;
-  transition: 0.2s linear;
+  padding-bottom: 10px;
   background: white;
+  transition: 0.2s linear;
   z-index: 999; }
+  header .header_active {
+    background: pink; }
   header .container {
     max-width: 1064px;
     margin: auto;
     align-items: center; }
-    header .container a img {
+    header .container .logo {
       position: absolute;
       left: calc(50% - 40px);
       top: 16px; }
@@ -29,18 +34,30 @@ header {
         display: flex;
         align-items: center;
         padding-top: 5px; }
-        header .container nav .list li {
-          margin-right: 28px; }
-          header .container nav .list lilast-child {
-            margin-right: 0; }
-          header .container nav .list li a {
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 26px; }
-      header .container nav .list-ico {
-        display: flex;
-        align-items: center;
-        padding-top: 5px;
-        justify-content: center; }
+      header .container nav li {
+        margin-right: 28px; }
+        header .container nav li:last-child {
+          margin-right: 0; }
+        header .container nav li a {
+          text-decoration: none;
+          color: black;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px; }
+    header .container .list-ico {
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      justify-content: center; }
+      header .container .list-ico .list__item {
+        margin-right: 26px; }
+      header .container .list-icolast-child {
+        margin-right: 0; }
+
+@media screen and (max-width: 767px) {
+  header .container nav {
+    display: none; }
+
+  .list-ico {
+    display: flex;
+    align-items: center; } }

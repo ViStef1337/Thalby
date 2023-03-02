@@ -479,15 +479,50 @@ body.light .switch-wrap p span:nth-child(1):before {
     border-radius: 50%;
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
 }
+.owl-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 309px;
+}
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+.owl-dots{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.owl-dots .owl-dot span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: gray;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
+.owl-dots .active span{
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
 @media screen and (max-width: 767px){
     .nav-but-wrap{
         display: inline-block;
         margin-right: 30px;
     }
+}
+@media screen and (max-width: 767px){
     nav{
-        display: none;
-    }
-    .list{
         display: none;
     }
 }
