@@ -211,13 +211,15 @@
     }
     .circle__wrap{
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 111px;
+      flex-wrap: wrap;
       &:last-child{
         margin-bottom: 163px;
       }
         .circle__wrap-cont{
-
+          max-width: 33%;
+          text-align: center;
         }
       .circle {
         background: #21F7EC;
