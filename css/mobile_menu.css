@@ -65,6 +65,7 @@ body{
     padding-left: 15px;
     margin-top: 20px;
     transition : all 0.3s ease-out;
+    z-index: 99999;
 }
 .menu-icon {
     height: 30px;
